@@ -6,7 +6,7 @@ const FileUpload = (props: Props) => {
   const onFileChange = (e: any) => {
     var file = e.target.files[0];
     const upload = new Upload(file, {
-      endpoint: "http://localhost:6006/files",
+      endpoint: "http://10.10.1.112:6006/files",
       retryDelays: [0, 1000, 3000, 5000],
       metadata: {
         filename: file.name,
